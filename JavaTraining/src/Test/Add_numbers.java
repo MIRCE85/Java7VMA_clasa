@@ -16,10 +16,23 @@ public class Add_numbers {
      */
     public static void main(String[] args) {
         int x, y, z;
-      System.out.println("Enter two integers to calculate their sum ");
+        String operatie;
+        
+      System.out.println("Enter two integers to calculate them ");
       Scanner in = new Scanner(System.in);
       x = in.nextInt();
       y = in.nextInt();
-      z = x + y;
+            
+      System.out.prinln("Ce fel de operatiune se doreste: suma sau diferenta");
+       Scanner op = new Scanner (System.in);
+          operatie = op.nextLine();
+      
+      if operatie = "suma" then
+             z = x + y;
+       else
+             z = x - y;
+     end if
+              
+              
       System.out.println("Sum of entered integers = "+z);
 }}
