@@ -21,5 +21,5 @@ public interface Saleable {
      *
      * @return method returns price for sale
      */
-    public int getSalePrice();  
+    public double getSalePrice();  
 }

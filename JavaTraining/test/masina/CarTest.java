@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author vladu
+ * @author Mircea
  */
 public class CarTest {
     
@@ -38,85 +38,60 @@ public class CarTest {
     }
 
     /**
-     * Test of getName method, of class Car.
+     * Test of setRentingPrice method, of class Car.
      */
     @Test
-    public void testGetName() {
-        System.out.println("getName");
-        Car instance = new Car();
-        String expResult = "";
-        String result = instance.getName();
-        assertEquals(expResult, result);
+    public void testSetRentingPrice() {
+        System.out.println("setRentingPrice");
+        double rentingPrice = 1000;
+        Car instance = new Car (Car.Marca.Mercedes, Car.Culoare.BLACK,230,460,50000);
+        instance.setRentingPrice(rentingPrice);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       fail("The test case is a prototype.");
+        
     }
 
     /**
-     * Test of getColor method, of class Car.
+     * Test of setSalesPrice method, of class Car.
      */
     @Test
-    public void testGetColor() {
-        System.out.println("getColor");
-        Car instance = new Car();
-        Car.Color expResult = null;
-        Car.Color result = instance.getColor();
-        assertEquals(expResult, result);
+    public void testSetSalesPrice() {
+        System.out.println("setSalesPrice");
+        double salesPrice = 50000;
+        Car instance = new Car (Car.Marca.Mercedes, Car.Culoare.BLACK,230,460,50000);
+        instance.setSalesPrice(salesPrice);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getSpeed method, of class Car.
+     * Test of getSalePrice method, of class Car.
      */
     @Test
-    public void testGetSpeed() {
-        System.out.println("getSpeed");
-        Car instance = new Car();
-        short expResult = 0;
-        short result = instance.getSpeed();
-        assertEquals(expResult, result);
+    public void testGetSalePrice() {
+        System.out.println("getSalePrice");
+        Car instance = new Car (Car.Marca.Mercedes, Car.Culoare.BLACK,230,460,50000);
+        double expResult = 150000;
+        double result = instance.getSalePrice();
+        assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ///fail("The test case is a prototype.");
+        
+        
     }
 
     /**
-     * Test of setName method, of class Car.
+     * Test of getDailyRentPrice method, of class Car.
      */
     @Test
-    public void testSetName() {
-        System.out.println("setName");
-        String newName = "";
-        Car instance = new Car();
-        instance.setName(newName);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setColor method, of class Car.
-     */
-    @Test
-    public void testSetColor() {
-        System.out.println("setColor");
-        Car.Color newColor = null;
-        Car instance = new Car();
-        instance.setColor(newColor);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setSpeed method, of class Car.
-     */
-    @Test
-    public void testSetSpeed() {
-        System.out.println("setSpeed");
-        short newSpeed = 0;
-        Car instance = new Car();
-        instance.setSpeed(newSpeed);
+    public void testGetDailyRentPrice() {
+        System.out.println("getDailyRentPrice");
+        Car instance = new Car (Car.Marca.Mercedes, Car.Culoare.BLACK,230,460,50000);
+        double expResult = 50000;
+        double result = instance.getDailyRentPrice();
+        assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
        // fail("The test case is a prototype.");
-            
     }
 
     /**
@@ -126,7 +101,7 @@ public class CarTest {
     public void testIncreaseSpeed() {
         System.out.println("increaseSpeed");
         short newSpeed = 0;
-        Car instance = new Car();
+        Car instance = null;
         instance.increaseSpeed(newSpeed);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -139,39 +114,14 @@ public class CarTest {
     public void testDecreaseSpeed() {
         System.out.println("decreaseSpeed");
         short newSpeed = 0;
-        Car instance = new Car();
+        Car instance = null;
         instance.decreaseSpeed(newSpeed);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of getSalePrice method, of class Car.
-     */
-    @Test
-    public void testGetSalePrice() {
-        System.out.println("getSalePrice");
-        Car instance = new Car();
-        int expResult = 0;
-        int result = instance.getSalePrice();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getDailyRentPrice method, of class Car.
-     */
-    @Test
-    public void testGetDailyRentPrice() {
-        System.out.println("getDailyRentPrice");
-        Car instance = new Car();
-        int expResult = 100;
-        int result = instance.getDailyRentPrice();
-       // assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-      //  fail("The test case is a prototype.");
-    //  assertEquals(daily, instance.getDailyRentPrice(),0.0);
+    private void assertEquals(double expResult, double result, double par) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

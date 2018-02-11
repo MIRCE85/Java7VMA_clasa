@@ -16,14 +16,9 @@ public class TestCars {
      */
     public static void main(String[] args) {
       Car mertzanul = new Car (Car.Marca.Mercedes, Car.Culoare.BLACK,230,460,50000);
+      Car daciaa = new Car(Car.Marca.Dacia,Car.Culoare.RED,100,250,15000);
+      Car bmveanul = new Car(Car.Marca.Renault,Car.Culoare.WHITE,50,10,14);
       
-        
-        
-      //  Car masina= new Car(Car.RENTABLE, 230, 460, 50000);
-        
-        
-        
-        
     }
     
 }

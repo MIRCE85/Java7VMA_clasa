@@ -11,6 +11,8 @@ package masina;
  */
 
 public class Car implements Saleable, Rentable {
+
+    
  public enum Culoare {RED, YELLOW, BLUE, BLACK, WHITE};
     public enum Marca {Mercedes, Renault, Dacia};
     
@@ -18,25 +20,26 @@ public class Car implements Saleable, Rentable {
     private double speed = 0.0;
     private Marca name = Marca.Dacia;
     
+    
     private double rentingPrice = 0;
 
-    public void setRentingPrice(double rentingPrice) {
+        public void setRentingPrice(double rentingPrice) {
         this.rentingPrice = rentingPrice;
     }
-
+  
+    private double salesPrice = 0;
     public void setSalesPrice(double salesPrice) {
         this.salesPrice = salesPrice;
     }
-    private double salesPrice = 0;
-        
-    
+  
+            
    @Override
-    public double getSalesPrice() {
+    public double getSalePrice() {
             return salesPrice;
     }
 
-    @Override
-    public double getDailyRentingPrice() {
+   @Override
+    public double getDailyRentPrice() {
         return rentingPrice;        
     }
     

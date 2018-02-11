@@ -21,5 +21,5 @@ public interface Rentable {
      *
      * @return method returns price for daily rent
      */
-    public int getDailyRentPrice();   
+    public double getDailyRentPrice();   
 }
