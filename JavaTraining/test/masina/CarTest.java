@@ -61,7 +61,7 @@ public class CarTest {
         Car instance = new Car (Car.Marca.Mercedes, Car.Culoare.BLACK,230,460,50000);
         instance.setSalesPrice(salesPrice);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -71,7 +71,7 @@ public class CarTest {
     public void testGetSalePrice() {
         System.out.println("getSalePrice");
         Car instance = new Car (Car.Marca.Mercedes, Car.Culoare.BLACK,230,460,50000);
-        double expResult = 150000;
+        double expResult = 50000;
         double result = instance.getSalePrice();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
